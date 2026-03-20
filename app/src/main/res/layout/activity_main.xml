@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Bottom Navigation Container -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/bg_bottom_nav"
+        android:gravity="center">
+
+        <!-- LOCAL -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_local"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/icon_local"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_library_music"
+                android:tint="#AAAAAA"/>
+
+            <TextView
+                android:id="@+id/text_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOCAL"
+                android:textSize="12sp"
+                android:textColor="#AAAAAA"/>
+        </LinearLayout>
+
+        <!-- SEARCH -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_search"
+                android:tint="#AAAAAA"/>
+
+            <TextView
+                android:id="@+id/text_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEARCH"
+                android:textSize="12sp"
+                android:textColor="#AAAAAA"/>
+        </LinearLayout>
+
+        <!-- ONLINE (Highlighted) -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_online"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_selected"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/icon_online"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_cloud"
+                android:tint="#B388FF"/>
+
+            <TextView
+                android:id="@+id/text_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ONLINE"
+                android:textSize="12sp"
+                android:textColor="#B388FF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
