@@ -1,12 +1,9 @@
 # 🎵 Android Custom Bottom Navigation (Java)
 
+https://github.com/user-attachments/assets/31a88ed8-b691-411e-8ef5-d20b047a7383
+
 A modern and fully customizable **Bottom Navigation UI** built using **Android (Java + XML)**.
 This project demonstrates how to create a **custom-designed bottom navigation bar** instead of using the default `BottomNavigationView`.
-
-
-https://github.com/user-attachments/assets/06598643-1c56-42f0-8e5e-1d290c38c239
-
-
 ---
 
 ## ✨ Features
